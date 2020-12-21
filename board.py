@@ -4,8 +4,8 @@ from exceptions import NextPiece, GameOver, DeadEndError
 
 class Board:
 
-    height = 10
-    width = 10
+    height = 20
+    width = 20
     game_over = False
 
     _final = np.zeros(shape=(height, width))
