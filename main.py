@@ -19,10 +19,8 @@ def game():
             s - rotate piece clockwise\n
             w - rotate piece counter clockwise\n
             """)
-            continue
         except DirectionError:
             print('\nCannot move piece in this direction.')
-            continue
         except (NextPiece, DeadEndError):
             piece = Piece(board)
         except GameOver:
